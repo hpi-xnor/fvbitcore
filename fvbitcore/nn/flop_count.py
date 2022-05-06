@@ -2,7 +2,7 @@
 # pyre-ignore-all-errors[2,33]
 
 from collections import defaultdict
-from typing import Any, Counter, DefaultDict, Dict, Optional, Tuple, Union
+from typing import Any, Counter, DefaultDict, Dict, Optional, Tuple, Union, Type
 
 import torch.nn as nn
 from torch import Tensor
@@ -113,9 +113,11 @@ class FlopCountAnalysis(JitModelAnalysis):
         self,
         model: nn.Module,
         inputs: Union[Tensor, Tuple[Tensor, ...]],
+        quantization_base_class: Type = None,
     ) -> None:
         super().__init__(model=model, inputs=inputs)
         self.set_op_handle(**_DEFAULT_SUPPORTED_OPS)
+        self.quantization_base_class = quantization_base_class
 
     __init__.__doc__ = JitModelAnalysis.__init__.__doc__
 

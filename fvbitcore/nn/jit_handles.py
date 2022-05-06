@@ -9,7 +9,6 @@ from numbers import Number
 from typing import Any, Callable, List, Optional, Union
 
 import numpy as np
-from torch import Tensor
 
 
 try:
@@ -257,17 +256,21 @@ def batchnorm_flop_jit(inputs: List[Any], outputs: List[Any]) -> Number:
     input_shape = prod(get_shape(inputs[0]))
     return input_shape * (2 if has_affine else 1)
 
+
 def embedding_flop_jit(inputs: List[Any], outputs: List[Any]) -> Number:
     """Embeddings just copy from the weights in the forward pass."""
     return 0
+
 
 def embedding_bag_flop_jit(inputs: List[Any], outputs: List[Any]) -> Number:
     """Embedding bags just copy from the weights in the forward pass."""
     return 0
 
+
 def sigmoid_flop_jit(inputs: List[Any], outputs: List[Any]) -> Number:
     """Sigmoid is defined as 1 / (1 + exp(-x)). So there are four FLOPs involved per output."""
     return 4 * outputs.numel()
+
 
 def elementwise_flop_counter(input_scale: float = 1, output_scale: float = 0) -> Handle:
     """
