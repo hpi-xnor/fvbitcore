@@ -1,12 +1,11 @@
 package:
-  name: fvcore
+  name: fvbitcore
   version: "{{ environ.get('BUILD_VERSION') }}"
 
 source:
- path: ../..
+  path: ../..
 
 requirements:
-
   host:
     - python
     - setuptools

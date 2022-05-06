@@ -9,7 +9,7 @@ from setuptools import find_packages, setup
 
 def get_version():
     init_py_path = path.join(
-        path.abspath(path.dirname(__file__)), "fvcore", "__init__.py"
+        path.abspath(path.dirname(__file__)), "fvbitcore", "__init__.py"
     )
     init_py = open(init_py_path, "r").readlines()
     version_line = [l.strip() for l in init_py if l.startswith("__version__")][0]
@@ -34,12 +34,12 @@ def get_version():
 
 
 setup(
-    name="fvcore",
+    name="fvbitcore",
     version=get_version(),
     author="FAIR",
     license="Apache 2.0",
-    url="https://github.com/facebookresearch/fvcore",
-    description="Collection of common code shared among different research "
+    url="https://gitlab.hpi.de/hpi-xnor/bmxnet-projects/fvbitcore",
+    description="Fork from https://github.com/facebookresearch/fvcore : Collection of common code shared among different research "
     "projects in FAIR computer vision team",
     python_requires=">=3.6",
     install_requires=[
@@ -52,7 +52,6 @@ setup(
         "tabulate",
         "iopath>=0.1.7",
         "dataclasses; python_version<'3.7'",
-        "bitorch"
     ],
     extras_require={"all": ["shapely"]},
     packages=find_packages(exclude=("tests",)),

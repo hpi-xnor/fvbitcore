@@ -640,10 +640,10 @@ def flop_count_table(
     quantized_modules = {x[0]: x[1] for x in qitems}
     params_header = "#parameters" + (" or shape" if show_param_shapes else "")
     acts_header = "#activations"
-    flops_header = "#full size flops"
-    corrected_flops_header = "#actual flops (app.)"
-    size_header = "#full size in bits"
-    q_size_header = "#actual size in bits"
+    flops_header = "#unoptimized size flops"
+    corrected_flops_header = "#speed up flops (app.)"
+    size_header = "#uncompressed size in bits"
+    q_size_header = "#compressed size in bits"
 
     model = flops._model
     # cast to dict since pyre doesn't like the implicit defaultdict->dict
