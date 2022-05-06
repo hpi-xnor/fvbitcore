@@ -8,7 +8,7 @@ import uuid
 from typing import Optional
 from unittest.mock import MagicMock
 
-from fvcore.common.file_io import LazyPath, PathManager, get_cache_dir
+from fvbitcore.common.file_io import LazyPath, PathManager, get_cache_dir
 
 
 class TestNativeIO(unittest.TestCase):
@@ -262,7 +262,7 @@ class TestOneDrive(unittest.TestCase):
     _url = "https://1drv.ms/u/s!Aus8VCZ_C_33gQbJsUPTIj3rQu99"
 
     def test_one_drive_download(self) -> None:
-        from fvcore.common.file_io import OneDrivePathHandler
+        from fvbitcore.common.file_io import OneDrivePathHandler
 
         _direct_url = OneDrivePathHandler().create_one_drive_direct_download(self._url)
         _gt_url = (
