@@ -10,8 +10,8 @@
   exit 1
 }
 
-echo "Running isort..."
-isort -y -sp .
+# echo "Running isort..."
+# isort -sp .
 
 echo "Running black..."
 black .
@@ -20,10 +20,10 @@ echo "Running flake8..."
 if [ -x "$(command -v flake8-3)" ]; then
   flake8-3 .
 else
-  python3 -m flake8 .
+  python3 -m flake8 fvbitcore
 fi
 
-command -v arc > /dev/null && {
-  echo "Running arc lint ..."
-  arc lint
-}
+# command -v arc > /dev/null && {
+#   echo "Running arc lint ..."
+#   arc lint
+# }
