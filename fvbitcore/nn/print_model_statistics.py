@@ -3,7 +3,7 @@
 from collections import defaultdict
 from copy import deepcopy
 from math import ceil
-from typing import Any, Dict, Iterable, List, Optional, Set, Tuple, Type
+from typing import Any, Dict, Iterable, KeysView, List, Optional, Set, Tuple, Type
 
 import tabulate
 import torch
@@ -21,11 +21,11 @@ def _get_quantization_keys(
     if quantization_base_class is None:
         return keys
     for name, module in model.named_modules():
-        variables = vars(module)
+        variables = dir(module)
         quantizations = [
-            variable
+            getattr(module, variable)
             for variable in variables
-            if issubclass(type(variable), quantization_base_class)
+            if issubclass(type(getattr(module, variable)), quantization_base_class)
         ]
         if not quantizations:
             continue

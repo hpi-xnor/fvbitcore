@@ -172,7 +172,6 @@ def _get_scoped_trace_graph(
     for name, mod in _named_modules_without_dup(module):
         name = aliases[mod]
         register_hooks(mod, name)
-
     graph, _ = _get_trace_graph(module, inputs)
 
     for handle in hook_handles:
