@@ -117,7 +117,7 @@ class FlopCountAnalysis(JitModelAnalysis):
     ) -> None:
         super().__init__(model=model, inputs=inputs)
         self.set_op_handle(**_DEFAULT_SUPPORTED_OPS)
-        self.quantization_base_class = quantization_base_class
+        self._quantization_base_class = quantization_base_class
 
     __init__.__doc__ = JitModelAnalysis.__init__.__doc__
 

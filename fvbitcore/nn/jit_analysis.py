@@ -13,7 +13,7 @@ from typing import Any, Dict, Iterator, List, Optional, Set, Tuple, TypeVar, Uni
 import numpy as np
 import torch
 import torch.nn as nn
-from fvcore.common.checkpoint import _named_modules_with_dup
+from fvbitcore.common.checkpoint import _named_modules_with_dup
 from torch import Tensor
 from torch.jit import TracerWarning, _get_trace_graph
 
@@ -172,7 +172,6 @@ def _get_scoped_trace_graph(
     for name, mod in _named_modules_without_dup(module):
         name = aliases[mod]
         register_hooks(mod, name)
-
     graph, _ = _get_trace_graph(module, inputs)
 
     for handle in hook_handles:
