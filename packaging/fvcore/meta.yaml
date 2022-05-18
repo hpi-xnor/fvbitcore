@@ -25,7 +25,7 @@ build:
   script: BUILD_NIGHTLY=1 python setup.py install --single-version-externally-managed --record=record.txt # [not win]
 
 about:
-  home: https://github.com/facebookresearch/fvcore
+  home: https://github.com/hpi-xnor/fvbitcore
   license: Apache 2.0
   license_file: LICENSE
-  summary: "Collection of common code that's shared among different research projects in FAIR computer vision team."
+  summary: "Fork of fvcore with support for bitorch."

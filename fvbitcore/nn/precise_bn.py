@@ -192,7 +192,7 @@ def update_bn_stats(
 def get_bn_modules(model: nn.Module) -> List[nn.Module]:
     """
     Find all BatchNorm (BN) modules that are in training mode. See
-    fvcore.precise_bn.BN_MODULE_TYPES for a list of all modules that are
+    fvbitcore.precise_bn.BN_MODULE_TYPES for a list of all modules that are
     included in this search.
 
     Args:

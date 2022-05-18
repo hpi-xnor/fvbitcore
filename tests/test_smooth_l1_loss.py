@@ -4,7 +4,7 @@ import unittest
 
 import numpy as np
 import torch
-from fvcore.nn import smooth_l1_loss
+from fvbitcore.nn import smooth_l1_loss
 
 
 class TestSmoothL1Loss(unittest.TestCase):

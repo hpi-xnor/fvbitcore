@@ -5,8 +5,8 @@ from typing import Dict
 
 import torch
 import torch.nn as nn
-from fvcore.nn import ActivationCountAnalysis, FlopCountAnalysis
-from fvcore.nn.print_model_statistics import (
+from fvbitcore.nn import ActivationCountAnalysis, FlopCountAnalysis
+from fvbitcore.nn.print_model_statistics import (
     _fill_missing_statistics,
     _group_by_module,
     _indicate_uncalled_modules,

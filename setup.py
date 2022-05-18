@@ -36,11 +36,10 @@ def get_version():
 setup(
     name="fvbitcore",
     version=get_version(),
-    author="FAIR",
+    author="Hasso Plattner Institute",
     license="Apache 2.0",
-    url="https://gitlab.hpi.de/hpi-xnor/bmxnet-projects/fvbitcore",
-    description="Fork from https://github.com/facebookresearch/fvcore : Collection of common code shared among different research "
-    "projects in FAIR computer vision team",
+    url="https://github.com/hpi-xnor/fvbitcore",
+    description="Fork of https://github.com/facebookresearch/fvcore with support for bitorch",
     python_requires=">=3.6",
     install_requires=[
         "numpy",

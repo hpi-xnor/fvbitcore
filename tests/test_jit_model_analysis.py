@@ -10,9 +10,9 @@ from typing import Any, Dict, List
 
 import torch
 import torch.nn as nn
-from fvcore.nn.flop_count import FlopCountAnalysis
-from fvcore.nn.jit_analysis import JitModelAnalysis
-from fvcore.nn.jit_handles import Handle, addmm_flop_jit, conv_flop_jit, linear_flop_jit
+from fvbitcore.nn.flop_count import FlopCountAnalysis
+from fvbitcore.nn.jit_analysis import JitModelAnalysis
+from fvbitcore.nn.jit_handles import Handle, addmm_flop_jit, conv_flop_jit, linear_flop_jit
 
 
 class NestedNetInnerModule(nn.Module):

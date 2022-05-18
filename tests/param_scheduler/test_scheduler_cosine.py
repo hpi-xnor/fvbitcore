@@ -3,7 +3,7 @@
 import copy
 import unittest
 
-from fvcore.common.param_scheduler import CosineParamScheduler
+from fvbitcore.common.param_scheduler import CosineParamScheduler
 
 
 class TestCosineScheduler(unittest.TestCase):

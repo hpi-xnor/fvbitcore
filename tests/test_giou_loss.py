@@ -4,7 +4,7 @@ import unittest
 
 import numpy as np
 import torch
-from fvcore.nn import giou_loss
+from fvbitcore.nn import giou_loss
 
 
 class TestGIoULoss(unittest.TestCase):

@@ -3,7 +3,7 @@
 
 import unittest
 
-from fvcore.nn.parameter_count import parameter_count, parameter_count_table
+from fvbitcore.nn.parameter_count import parameter_count, parameter_count_table
 from torch import nn
 
 

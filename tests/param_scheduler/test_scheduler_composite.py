@@ -3,7 +3,7 @@
 import copy
 import unittest
 
-from fvcore.common.param_scheduler import (
+from fvbitcore.common.param_scheduler import (
     CompositeParamScheduler,
     ConstantParamScheduler,
     CosineParamScheduler,

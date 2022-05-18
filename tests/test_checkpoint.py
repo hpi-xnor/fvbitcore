@@ -12,7 +12,7 @@ from typing import Tuple
 from unittest.mock import MagicMock
 
 import torch
-from fvcore.common.checkpoint import Checkpointer, PeriodicCheckpointer
+from fvbitcore.common.checkpoint import Checkpointer, PeriodicCheckpointer
 from torch import nn
 
 

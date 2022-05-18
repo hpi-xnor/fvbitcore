@@ -6,10 +6,10 @@ import typing
 import unittest
 
 import numpy as np
-from fvcore.common.config import CfgNode
-from fvcore.common.history_buffer import HistoryBuffer
-from fvcore.common.registry import Registry
-from fvcore.common.timer import Timer
+from fvbitcore.common.config import CfgNode
+from fvbitcore.common.history_buffer import HistoryBuffer
+from fvbitcore.common.registry import Registry
+from fvbitcore.common.timer import Timer
 from yaml.constructor import ConstructorError
 
 

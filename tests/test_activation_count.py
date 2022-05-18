@@ -8,8 +8,8 @@ from typing import Any, Dict, List, Tuple
 
 import torch
 import torch.nn as nn
-from fvcore.nn.activation_count import ActivationCountAnalysis, activation_count
-from fvcore.nn.jit_handles import Handle
+from fvbitcore.nn.activation_count import ActivationCountAnalysis, activation_count
+from fvbitcore.nn.jit_handles import Handle
 from numpy import prod
 
 

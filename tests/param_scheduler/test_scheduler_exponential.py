@@ -2,7 +2,7 @@
 
 import unittest
 
-from fvcore.common.param_scheduler import ExponentialParamScheduler
+from fvbitcore.common.param_scheduler import ExponentialParamScheduler
 
 
 class TestExponentialScheduler(unittest.TestCase):

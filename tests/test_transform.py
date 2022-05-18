@@ -6,8 +6,8 @@ from typing import Any, Tuple
 
 import numpy as np
 import torch
-from fvcore.transforms import transform as T
-from fvcore.transforms.transform_util import to_float_tensor, to_numpy
+from fvbitcore.transforms import transform as T
+from fvbitcore.transforms.transform_util import to_float_tensor, to_numpy
 
 
 # pyre-ignore-all-errors

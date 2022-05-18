@@ -4,7 +4,7 @@ import copy
 import unittest
 from typing import Any, Dict
 
-from fvcore.common.param_scheduler import StepParamScheduler
+from fvbitcore.common.param_scheduler import StepParamScheduler
 
 
 class TestStepScheduler(unittest.TestCase):

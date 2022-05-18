@@ -2,7 +2,7 @@
 
 import unittest
 
-from fvcore.common.param_scheduler import LinearParamScheduler
+from fvbitcore.common.param_scheduler import LinearParamScheduler
 
 
 class TestLienarScheduler(unittest.TestCase):

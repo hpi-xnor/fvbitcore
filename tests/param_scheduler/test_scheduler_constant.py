@@ -2,7 +2,7 @@
 
 import unittest
 
-from fvcore.common.param_scheduler import ConstantParamScheduler
+from fvbitcore.common.param_scheduler import ConstantParamScheduler
 
 
 class TestConstantScheduler(unittest.TestCase):

@@ -3,7 +3,7 @@
 import copy
 import unittest
 
-from fvcore.common.param_scheduler import MultiStepParamScheduler
+from fvbitcore.common.param_scheduler import MultiStepParamScheduler
 
 
 class TestMultiStepParamScheduler(unittest.TestCase):

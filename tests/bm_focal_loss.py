@@ -1,7 +1,7 @@
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
 
 import torch
-from fvcore.common.benchmark import benchmark
+from fvbitcore.common.benchmark import benchmark
 from test_focal_loss import TestFocalLoss, TestFocalLossStar
 
 

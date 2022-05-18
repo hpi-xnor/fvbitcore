@@ -3,7 +3,7 @@
 import copy
 import unittest
 
-from fvcore.common.param_scheduler import StepWithFixedGammaParamScheduler
+from fvbitcore.common.param_scheduler import StepWithFixedGammaParamScheduler
 
 
 class TestStepWithFixedGammaScheduler(unittest.TestCase):

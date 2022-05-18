@@ -5,7 +5,7 @@ import unittest
 
 import numpy as np
 import torch
-from fvcore.nn import (
+from fvbitcore.nn import (
     sigmoid_focal_loss,
     sigmoid_focal_loss_jit,
     sigmoid_focal_loss_star,

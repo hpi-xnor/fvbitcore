@@ -7,7 +7,7 @@ from typing import List, Tuple
 
 import numpy as np
 import torch
-from fvcore.nn import update_bn_stats
+from fvbitcore.nn import update_bn_stats
 from torch import nn
 
 

@@ -7,8 +7,8 @@ from typing import Any, Dict, Tuple
 
 import torch
 import torch.nn as nn
-from fvcore.nn.flop_count import _DEFAULT_SUPPORTED_OPS, FlopCountAnalysis, flop_count
-from fvcore.nn.jit_handles import Handle
+from fvbitcore.nn.flop_count import _DEFAULT_SUPPORTED_OPS, FlopCountAnalysis, flop_count
+from fvbitcore.nn.jit_handles import Handle
 from torch.autograd.function import Function
 from torch.nn import functional as F
 

@@ -5,6 +5,7 @@ FLOP estimation. This repository adapts this tool to take into account quantizat
 model flops and size.
 
 This tool can be used together with [bitorch](https://github.com/hpi-xnor/bitorch) to create and evaluate quantized deep learning models.
+The documentation may not yet be up to date yet.
 
 # fvcore
 

@@ -3,7 +3,7 @@
 import unittest
 
 import numpy as np
-from fvcore.transforms.transform_util import to_float_tensor, to_numpy
+from fvbitcore.transforms.transform_util import to_float_tensor, to_numpy
 
 
 class TestTransformUtil(unittest.TestCase):

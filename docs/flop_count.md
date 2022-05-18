@@ -36,7 +36,7 @@ We create a flop counting tool in fvcore, which:
 
 It has an interface like this:
 ```
-$ from fvcore.nn import FlopCountAnalysis
+$ from fvbitcore.nn import FlopCountAnalysis
 $ flops = FlopCountAnalysis(model, input)
 $ flops.total()
 274656
@@ -68,7 +68,7 @@ Toy examples are not enough. Below are the pretty-print results of 3 real-world 
 * [Roberta in fairseq](https://gist.github.com/ppwwyyxx/1885ec8aaf5093a8d40cdde2b6559ab3#file-roberta-from-fairseq)
 * [ViT in classyvision](https://gist.github.com/ppwwyyxx/1885ec8aaf5093a8d40cdde2b6559ab3#file-vit-from-classyvision)
 
-In addition, our approach is not limited to flop counting, but can collect other operator-level statistics during the execution of a model. For example, [recent research](https://arxiv.org/abs/2003.13678) shows that flop count is poorly correlated with GPU latency, and proposes to use “activation counts” or memory footprint as another metric. We have added `fvcore.nn.ActivationCountAnalysis` that is able to produce this metric as well.
+In addition, our approach is not limited to flop counting, but can collect other operator-level statistics during the execution of a model. For example, [recent research](https://arxiv.org/abs/2003.13678) shows that flop count is poorly correlated with GPU latency, and proposes to use “activation counts” or memory footprint as another metric. We have added `fvbitcore.nn.ActivationCountAnalysis` that is able to produce this metric as well.
 
 
 ## Appendix: Mechanism & Limitations

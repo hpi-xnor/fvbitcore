@@ -2,7 +2,7 @@
 
 import unittest
 
-from fvcore.common.param_scheduler import PolynomialDecayParamScheduler
+from fvbitcore.common.param_scheduler import PolynomialDecayParamScheduler
 
 
 class TestPolynomialScheduler(unittest.TestCase):
