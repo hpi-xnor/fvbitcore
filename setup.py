@@ -33,6 +33,11 @@ def get_version():
     return version
 
 
+readme_path = path.join(path.abspath(path.dirname(__file__)), "README.md")
+with open(readme_path, "r", encoding="utf-8") as handle:
+    readme_content = handle.read()
+
+
 setup(
     name="fvbitcore",
     version=get_version(),
@@ -40,6 +45,8 @@ setup(
     license="Apache 2.0",
     url="https://github.com/hpi-xnor/fvbitcore",
     description="Fork of https://github.com/facebookresearch/fvcore with support for bitorch",
+    long_description=readme_content,
+    long_description_content_type="text/markdown",
     python_requires=">=3.6",
     install_requires=[
         "numpy",
