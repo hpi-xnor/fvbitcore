@@ -1,8 +1,9 @@
-image: python:3.8
+image: python:3.7
 
 before_script:
   - python --version
-  - pip install shapely pytest torch
+  - pip install -e .
+  - pip install shapely pytest torch flake8
   - pwd
   - ls -l
   - python -c "import sys;print(sys.path)"
@@ -11,14 +12,14 @@ before_script:
   stage: test
   script:
     - flake8 --version
-    - flake8 --config=setup.cfg
-
-codestyle:3.7:
-  extends: .codestyle
-  image: python:3.7
+    - flake8
 
 codestyle:
   extends: .codestyle
+
+#codestyle:3.8:
+#  extends: .codestyle
+#  image: python:3.8
 
 .test:
   stage: test
@@ -26,9 +27,9 @@ codestyle:
     - pytest --version
     - python -m pytest .
 
-test:3.7:
-  extends: .test
-  image: python:3.7
-
 test:
   extends: .test
+
+#test:3.8:
+#  extends: .test
+#  image: python:3.8
