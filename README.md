@@ -5,9 +5,10 @@ FLOP estimation. This repository adapts this tool to take into account quantizat
 model flops and size.
 
 This tool can be used together with [bitorch](https://github.com/hpi-xnor/bitorch) to create and evaluate quantized deep learning models.
-The documentation may not yet be up to date yet.
+The documentation may not yet be up-to-date yet.
+Read more about the [original project](https://github.com/facebookresearch/fvcore) below.
 
-# fvcore
+### about the original fvcore project
 
 fvcore is a light-weight core library that provides the most common and essential
 functionality shared in various computer vision frameworks developed in FAIR,
@@ -16,7 +17,7 @@ such as [Detectron2](https://github.com/facebookresearch/detectron2/),
 [ClassyVision](https://github.com/facebookresearch/ClassyVision).
 All components in this library are type-annotated, tested, and benchmarked.
 
-The computer vision team in FAIR is responsible for maintaining this library.
+The computer vision team in FAIR is responsible for maintaining [fvcore](https://github.com/facebookresearch/fvcore).
 
 ## Features:
 
@@ -30,35 +31,37 @@ Besides some basic utilities, fvcore includes the following features:
 
 ## Install:
 
-fvcore requires pytorch and python >= 3.6.
+fvbitcore requires pytorch and python >= 3.6.
 
 Use one of the following ways to install:
 
 ### 1. Install from PyPI (updated nightly)
 
 ```
-pip install -U fvcore
+pip install -U fvbitcore
 ```
 
 ### 2. Install from Anaconda Cloud (updated nightly)
 
+(Not yet supported.)
+
 ```
-conda install -c fvcore -c iopath -c conda-forge fvcore
+conda install -c fvbitcore -c iopath -c conda-forge fvbitcore
 ```
 
 ### 3. Install latest from GitHub
 
 ```
-pip install -U 'git+https://github.com/facebookresearch/fvcore'
+pip install -U 'git+https://github.com/hpi-xnor/fvbitcore'
 ```
 
 ### 4. Install from a local clone
 
 ```
-git clone https://github.com/facebookresearch/fvcore
-pip install -e fvcore
+git clone https://github.com/hpi-xnor/fvbitcore
+pip install -e fvbitcore
 ```
 
 ## License
 
-This library is released under the [Apache 2.0 license](https://github.com/facebookresearch/fvcore/blob/main/LICENSE).
+This library is released under the [Apache 2.0 license](LICENSE).
